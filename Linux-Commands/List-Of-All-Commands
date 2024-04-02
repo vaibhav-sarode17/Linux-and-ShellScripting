@@ -1,0 +1,24 @@
+ls
+ls -l
+ls -lt
+ls -lta
+ls -a
+cd #DirName
+cd
+cd ..
+cd ../../../
+cd -
+cd ~
+mkdir #DirName
+mkdir #Dir1 #Dir2 #Dir3
+mkdir -p #Dir1/#Dir2/#Dir3
+mkdir #Dir{1..20}
+touch #FileName
+touch #File1 #File2 #File3
+touch #File{1..10}.txt
+cat #FileName
+cat #File1 #File2
+tac #FileName
+cat #FileName > #Text
+
+
