@@ -1,65 +1,65 @@
-ifconfig	: You can use the ifconfig command to assign an address to a network interface and to configure or display the current network interface configuration information. 
-hostname 	: hostname command in Linux is used to obtain the DNS(Domain Name System) name and set the system's hostname or NIS(Network Information System) domain name.
-Sudo su -	: Sudu su - command allows us to switch to a different user and execute one or more commands in the shell without logging out from our current session.
-pwd	: As the name states, command 'pwd' prints the current working directory. It prints the current directory name with the complete path starting from root (/).
-cd	: cd command is used to change the current working directory
-ls	: The ls command is used to list files or directories in Linux
-ls -l	: It is +use a long listing format
-Ls -a	: It do not ignore entries starting with . (dot)
-Ls -lt	: All the files within the current directory of our Linux system, along with their details vertically (latest create first)
-Ls -ltr	: All the files within the current directory of our Linux system, along with their details vertically (latest create last)
-Ls -lta	: All the files (dot file also / hidden) within the current directory of our Linux system, along with their details vertically (latest create first) 
-Ls -ltra : All the files (dot file also / hidden) within the current directory of our Linux system, along with their details vertically (latest create last)
-Man  : any command	man command in Linux is used to display the user manual of any command that we can run on the terminal
-cat	: The cat command is a utility command in Linux. One of its most commonly known usages is to print the content of a file onto the standard output stream.
-Cat > file name	: To create file (use ctrl+D to save file)
-Cat >> file name	: To edit existing file through terminal (use ctrl+D to save file)
-Tac file name	: usages is to print the content of a file onto the standard output stream in reverse manner
-Touch file name	: To create blank files
-Mkdir dir name	: To create directory
-Mkdir -p dira/dirb/dirc	: To create directory inside directory
-Rm -f file name	: To remove files
-Rm -rf dir name	: To remove directory (you can remove file also by using this command)
-whoami	: It displays the username of the current user.
-Cd ..	: To go one level back in directory
-Cd ../../../	: To go more than one level back in directory
-Echo   “message”	: It is used to print message in terminal
+ifconfig		: You can use the ifconfig command to assign an address to a network interface and to configure or display the current network interface configuration information. 
+hostname 		: hostname command in Linux is used to obtain the DNS(Domain Name System) name and set the system's hostname or NIS(Network Information System) domain name.
+Sudo su -		: Sudu su - command allows us to switch to a different user and execute one or more commands in the shell without logging out from our current session.
+pwd		: As the name states, command 'pwd' prints the current working directory. It prints the current directory name with the complete path starting from root (/).
+cd		: cd command is used to change the current working directory
+ls		: The ls command is used to list files or directories in Linux
+ls -l		: It is +use a long listing format
+Ls -a		: It do not ignore entries starting with . (dot)
+Ls -lt		: All the files within the current directory of our Linux system, along with their details vertically (latest create first)
+Ls -ltr		: All the files within the current directory of our Linux system, along with their details vertically (latest create last)
+Ls -lta				: All the files (dot file also / hidden) within the current directory of our Linux system, along with their details vertically (latest create first) 
+Ls -ltra 			: All the files (dot file also / hidden) within the current directory of our Linux system, along with their details vertically (latest create last)
+Man  				: any command	man command in Linux is used to display the user manual of any command that we can run on the terminal
+cat				: The cat command is a utility command in Linux. One of its most commonly known usages is to print the content of a file onto the standard output stream.
+Cat > file name			: To create file (use ctrl+D to save file)
+Cat >> file name		: To edit existing file through terminal (use ctrl+D to save file)
+Tac file name			: usages is to print the content of a file onto the standard output stream in reverse manner
+Touch file name			: To create blank files
+Mkdir dir name			: To create directory
+Mkdir -p dira/dirb/dirc		: To create directory inside directory
+Rm -f file name			: To remove files
+Rm -rf dir name			: To remove directory (you can remove file also by using this command)
+whoami				: It displays the username of the current user.
+Cd ..				: To go one level back in directory
+Cd ../../../			: To go more than one level back in directory
+Echo   “message”		: It is used to print message in terminal
 Echo  “message” > file name	: It is used to save message inside any file
-Echo  “message 2”  >> file name		It is used to save edit existing file with new message
-Mv  file1   file2		This command is used to rename file
-Mv    file1      /mnt/dir1		This command is used to move any file to any directory
-Cp     file1     copy1		This command is use to make duplicate in exiting directory
-Cp  -r   file1      /mnt/dir1		This command is use to make duplicate in required directory
-Vi   file name		This command is use to open and edit file in vi editor
-Press I 	– to enter inside insert mode
-Press esc 	– to enter inside command mode or exit from insert mode to command mode
-:wq 	– to save and close file in command mode
-:q 	– to close file in command mode
-:q! 	– to close file in command mode without saving if you write some content inside the file
-:x 	- to save and close file in command mode
-:x! 	- to save and close forcefully file in command mode
-Press o 	– to go in next line in command mode
-Press dd 	– to delete particular line in command mode
-Shift + H  	-  to go in first line of the file in command mode
-Shift + A  	-  to go in end of particular line of the file in command mode
-Shift + G  	-  to go in last line of the file in command mode
-r and then character 	– to replace any character in command mode
-Press X 	– to delete some character in command mode (it act as backspace)
-/pattern  	-   to search any pattern in command mode inside of vi editor
- grep    pattern     filename		to search any pattern from terminal case-sensitive
- grep  -c  pattern     filename		to get count of pattern from terminal
- grep  -i  pattern     filename		to search any pattern from terminal which will be case-insensitive
- grep -s   pattern     filename		It is used to express suppress error
- wget    https://exaple.com		It is used to download any content 
+Echo  “message 2”  >> file name	:It is used to save edit existing file with new message
+Mv  file1   file2		:This command is used to rename file
+Mv    file1      /mnt/dir1	:This command is used to move any file to any directory
+Cp     file1     copy1		:This command is use to make duplicate in exiting directory
+Cp  -r   file1      /mnt/dir1	:This command is use to make duplicate in required directory
+Vi   file name			:This command is use to open and edit file in vi editor
+Press I 			– to enter inside insert mode
+Press esc 			– to enter inside command mode or exit from insert mode to command mode
+:wq 				– to save and close file in command mode
+:q 				– to close file in command mode
+:q! 				– to close file in command mode without saving if you write some content inside the file
+:x 				- to save and close file in command mode
+:x! 				- to save and close forcefully file in command mode
+Press o 			– to go in next line in command mode
+Press dd 			– to delete particular line in command mode
+Shift + H  			-  to go in first line of the file in command mode
+Shift + A  			-  to go in end of particular line of the file in command mode
+Shift + G  			-  to go in last line of the file in command mode
+r and then character 		– to replace any character in command mode
+Press X 			– to delete some character in command mode (it act as backspace)
+/pattern  			-  to search any pattern in command mode inside of vi editor
+ grep    pattern     filename		- to search any pattern from terminal case-sensitive
+ grep  -c  pattern     filename		- to get count of pattern from terminal
+ grep  -i  pattern     filename		- to search any pattern from terminal which will be case-insensitive
+ grep -s   pattern     filename		- It is used to express suppress error
+ wget    https://exaple.com		- It is used to download any content 
 	
  
- du  -sh  filename		It is used to get size of that file
-  tar  -cvf  filename		This command is used to create archive -c= create -v=verbose -f=force
-  tar  -xvf  filename		This command is used to extract archive -x=extract
- zip  -r  dir.zip  dir name		To zip any directory
-  unzip    dir.zip		To unzip any zipped file
-gzip		To compress the files
-gunzip		To unzip the compresses files
+ du  -sh  filename		- It is used to get size of that file
+  tar  -cvf  filename		- This command is used to create archive -c= create -v=verbose -f=force
+  tar  -xvf  filename		- This command is used to extract archive -x=extract
+ zip  -r  dir.zip  dir name	- To zip any directory
+  unzip    dir.zip		- To unzip any zipped file
+gzip				- To compress the files
+gunzip				- To unzip the compresses files
 	
 	
 	
