@@ -1,13 +1,13 @@
-ifconfig		: You can use the ifconfig command to assign an address to a network interface and to configure or display the current network interface configuration information. 
-hostname 		: hostname command in Linux is used to obtain the DNS(Domain Name System) name and set the system's hostname or NIS(Network Information System) domain name.
-Sudo su -		: Sudu su - command allows us to switch to a different user and execute one or more commands in the shell without logging out from our current session.
-pwd		: As the name states, command 'pwd' prints the current working directory. It prints the current directory name with the complete path starting from root (/).
-cd		: cd command is used to change the current working directory
-ls		: The ls command is used to list files or directories in Linux
-ls -l		: It is +use a long listing format
-Ls -a		: It do not ignore entries starting with . (dot)
-Ls -lt		: All the files within the current directory of our Linux system, along with their details vertically (latest create first)
-Ls -ltr		: All the files within the current directory of our Linux system, along with their details vertically (latest create last)
+ifconfig			: You can use the ifconfig command to assign an address to a network interface and to configure or display the current network interface configuration information. 
+hostname 			: hostname command in Linux is used to obtain the DNS(Domain Name System) name and set the system's hostname or NIS(Network Information System) domain name.
+Sudo su -			: Sudu su - command allows us to switch to a different user and execute one or more commands in the shell without logging out from our current session.
+pwd				: As the name states, command 'pwd' prints the current working directory. It prints the current directory name with the complete path starting from root (/).
+cd				: cd command is used to change the current working directory
+ls				: The ls command is used to list files or directories in Linux
+ls -l				: It is +use a long listing format
+Ls -a				: It do not ignore entries starting with . (dot)
+Ls -lt				: All the files within the current directory of our Linux system, along with their details vertically (latest create first)
+Ls -ltr				: All the files within the current directory of our Linux system, along with their details vertically (latest create last)
 Ls -lta				: All the files (dot file also / hidden) within the current directory of our Linux system, along with their details vertically (latest create first) 
 Ls -ltra 			: All the files (dot file also / hidden) within the current directory of our Linux system, along with their details vertically (latest create last)
 Man  				: any command	man command in Linux is used to display the user manual of any command that we can run on the terminal
