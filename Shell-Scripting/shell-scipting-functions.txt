@@ -1,0 +1,118 @@
+Functions
+
+#!/bin/sh
+
+#We have defined a hello world function here
+
+Hello () {
+   echo "Hello World"
+}
+
+# calling our function
+Hello
+
+######################
+
+Passing parameters to Functions
+
+#!/bin/sh
+
+# Define your function here
+Hello () {
+   echo "Hello World $1 $2"
+}
+
+# Invoke your function
+
+Hello velocity devops
+
+############################
+return
+#!/bin/sh
+
+# Define your function here
+Hello () {
+   echo "Hello World $1 $2"
+   return 120
+}
+
+# Invoke your function
+Hello velocity devops
+
+# Capture value returnd by last command
+ret=$?
+
+echo "Return value is $ret"
+
+########################################
+Nested Functions
+
+#!/bin/sh
+
+# Calling one function from another
+number_one () {
+   echo "This is the first function speaking..."
+   number_two
+}
+
+number_two () {
+   echo "This is now the second function speaking..."
+}
+
+# Calling function one.
+number_one
+
+#!/bin/bash
+
+#Passing Parameters to function
+
+hello () {
+a=$1
+b=$2
+
+val=`expr $a + $b`
+echo "a + b : $val"
+
+val=`expr $a - $b`
+echo "a - b : $val"
+
+val=`expr $a \* $b`
+echo "a * b : $val"
+
+val=`expr $b / $a`
+echo "b / a : $val"
+
+val=`expr $b % $a`
+echo "b % a : $val"
+
+}
+
+#invoking the function
+
+
+hello 10 20
+
+echo "random commands"
+echo "random commands"
+echo "random commands"
+echo "random commands"
+hello 200 300
+
+##################### return char values #########
+
+#!/bin/bash
+#Script for functions
+
+
+hello_world () {
+
+echo "Hello all welcome to velocity"
+retval="true"
+
+}
+
+hello_world
+
+
+echo "your return value is $retval"
+

@@ -1,0 +1,197 @@
+Shell loops Example
+
+###################
+for loop
+
+#!/bin/sh
+for i in 1 2 3 4 5
+do
+  echo "Looping ... number $i"
+done
+
+o/p-
+[root@ip-172-31-8-124 scripts]# ./for.sh
+Looping ... number 1
+Looping ... number 2
+Looping ... number 3
+Looping ... number 4
+Looping ... number 5
+
+#!/bin/bash
+#for loop one more eg
+i=1
+for day in Mon Tue Wed Thu Fri
+do
+ echo "Weekday $((i++)) : $day"
+done
+
+[root@ip-172-31-8-124 scripts]# ./for-1.sh
+Weekday 1 : Mon
+Weekday 2 : Tue
+Weekday 3 : Wed
+Weekday 4 : Thu
+Weekday 5 : Fri
+
+for ((i = 0 ; i < 5 ; i++)); do
+
+        echo "hello world"
+
+done
+
+###############################
+while loop
+#!/bin/sh
+
+a=0
+
+while [ $a -lt 10 ]
+do
+   echo $a
+   a=`expr $a + 1`
+done
+
+[root@ip-172-31-8-124 scripts]# ./while.sh
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+#################################################
+until
+#!/bin/sh
+
+a=0
+
+until [ ! $a -lt 10 ]
+do
+   echo $a
+   a=`expr $a + 1`
+done
+[root@ip-172-31-8-124 scripts]# ./until.sh
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+eg2= [ $a -gt 10 ] -- try this once
+#################################################
+nested loops
+for nested example
+
+#!/bin/bash
+# A shell script to print each number five times.
+for (( i = 1; i <= 5; i++ ))      ### Outer for loop ###
+do
+
+    for (( j = 1 ; j <= 5; j++ )) ### Inner for loop ###
+    do
+          echo -n  "$i "   #-n means do not output the trailing new line.n do not output the trailing newline. So it prints the string and does not go to the new line after that (which is the default behavior), so the output of the next command will be printed on the right side of the echoed string.
+    done
+
+  echo "" #### print the new line ###
+done
+
+
+###########################################################
+nested while
+#!/bin/sh
+
+a=0
+while [ "$a" -lt 10 ]    # this is loop1
+do
+   b="$a"
+   while [ "$b" -ge 0 ]  # this is loop2
+   do
+      echo -n "$b "
+      b=`expr $b - 1`
+   done
+   echo    # here we have added echo for new line. try only echo command we will get a new line
+   a=`expr $a + 1`
+done
+
+[root@ip-172-31-8-124 scripts]# ./while-nested.sh
+0
+1 0
+2 1 0
+3 2 1 0
+4 3 2 1 0
+5 4 3 2 1 0
+6 5 4 3 2 1 0
+7 6 5 4 3 2 1 0
+8 7 6 5 4 3 2 1 0
+9 8 7 6 5 4 3 2 1 0
+#####################################################
+
+Infinite loop
+#!/bin/bash
+
+a=10
+
+until [ $a -lt 10 ]
+do
+   echo $a
+   a=`expr $a + 1`
+done
+
+######################################################
+Break
+#!/bin/sh
+
+a=0
+
+while [ $a -lt 10 ]
+do
+   echo $a
+   if [ $a -eq 5 ]
+   then
+      break
+   fi
+   a=`expr $a + 1`
+done
+
+[root@ip-172-31-8-124 scripts]# ./break.sh
+0
+1
+2
+3
+4
+5
+#############################################
+continue
+#!/bin/sh
+
+a=0
+
+while [ $a -le 10 ]
+do
+  a=`expr $a + 1`
+   if [ $a -eq 5 ]
+   then
+     continue
+   fi
+echo $a
+done
+
+[root@ip-172-31-8-124 scripts]# ./continue.sh
+1
+2
+3
+4
+6
+7
+8
+9
+10
+11
+##########################################################################

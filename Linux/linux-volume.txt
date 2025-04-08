@@ -1,0 +1,19 @@
+
+Assignment: Create EBS volume and attach and dettach it to linux EC2 instance
+
+Steps:
+1.Launch instance
+2. Access instance from putty/moba
+3. Create EBS volume, attach with same availability zone
+4. On moba/putty--> {for root user} 
+	fdisk -l --> to show volumes present in system
+	lsblk --> to show all specifications
+	df -h --> to show how space is used in detail
+	df -h . --> to show how space used overall
+	mkfs -v -t ext4 /dev/xvdf --> to format new attached volume {/dev/xvdf} in ext4 file system
+	mkdir EBS --> create directory to mount new EBS vol.
+	mount /dev/xvdf EBS --->mount the new attached volume on EBS directory
+	df -h --->to check new attached EBS volume mounted successfully or not
+	umount /dev/xvdf --->to unmount attached volume.
+
+
