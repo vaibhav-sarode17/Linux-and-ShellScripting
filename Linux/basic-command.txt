@@ -6,6 +6,7 @@ cd				: cd command is used to change the current working directory
 ls				: The ls command is used to list files or directories in Linux
 ls -l				: It is +use a long listing format
 ls -a				: It do not ignore entries starting with . (dot)
+ls -lh				: List all the file and size in detail in human readable format
 ls -lt				: All the files within the current directory of our Linux system, along with their details vertically (latest create first)
 ls -ltr				: All the files within the current directory of our Linux system, along with their details vertically (latest create last)
 ls -lta				: All the files (dot file also / hidden) within the current directory of our Linux system, along with their details vertically (latest create first) 
